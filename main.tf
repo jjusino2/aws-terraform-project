@@ -6,11 +6,6 @@
 #Windows
 #icacls "C:\Users\jjusi\terraform-project\AWS-project\my-ec2-key.pem" /inheritance:r /grant:r "jjusi:F"
 
-# This specifies the provider and region
-provider "aws" {
-  region = "us-east-1"
-}
-
 #Creating your ec2 resource hosted on WebServer1 & 2
 #ami number is an input to update
 resource "aws_instance" "WebServer1" {
